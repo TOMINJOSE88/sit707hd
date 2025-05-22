@@ -81,4 +81,11 @@ public class WebCalculatorTest {
         System.out.println("🧪 R10: Invalid operation — Expecting IllegalArgumentException");
         throw new IllegalArgumentException("Unknown operation");
     }
+
+    @Test
+    public void testFailingCase() {
+        System.out.println("Running intentional failing test...");
+        assertEquals("Intentional failure", 5, 2 + 2); // Fails: 5 ≠ 4
+    }
+
 }
