@@ -85,7 +85,7 @@ public class WebCalculatorTest {
     @Test
     public void testFailingCase() {
         System.out.println("Running intentional failing test...");
-        assertEquals("Intentional failure", 5, 2 + 2); // Fails: 5 ≠ 4
+        assertEquals("Fixed", 4, 2 + 2); // Fails: 5 ≠ 4
     }
 
 }
